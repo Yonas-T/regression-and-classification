@@ -82,7 +82,7 @@
         "test_r2": 0.8396400550673148,
         "test_rmse": 10.614581315072266,
         "test_mae": 5.255324155288747,
-        "test_mape": Infinity
+        "test_mape": 0
     },
     "training_date": "2025-11-25 20:20:40",
     "dataset_info": {
