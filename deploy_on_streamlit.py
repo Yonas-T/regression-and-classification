@@ -55,7 +55,11 @@ if st.sidebar.button("Predict Sales"):
         model.fit(X, y)
 
     # Prepare input for prediction
-    input_features = np.array([[date_ordinal]])  # Reshape for sklearn
+    input_features = np.zeros(51)
+    input_features[1] = selected_date.year
+    input_features[2] = selected_date.month
+    input_features[3] = selected_date.day
+    input_features = np.array([input_features])  # Use the full feature array
 
     # Make prediction
     predicted_sales = model.predict(input_features)[0]
