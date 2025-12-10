@@ -1,0 +1,14 @@
+joblib
+streamlit
+numpy
+pandas
+scikit-learn
+librosa
+matplotlib
+seaborn
+xgboost
+scipy
+wave
+pydub
+python-dotenv
+soundfile
