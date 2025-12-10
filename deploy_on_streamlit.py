@@ -43,7 +43,7 @@ if st.sidebar.button("Predict Sales"):
     # Load your pre-trained model (assuming it's saved as 'sales_model.pkl')
     # Replace this with your actual model loading code
     try:
-        model = joblib.load('retail_demand_prediction_gradient_boosting.pkl')
+        model = joblib.load('models/retail_demand_prediction_gradient_boosting.pkl')
     except FileNotFoundError:
         # If no model file, use a dummy model for demonstration
         st.warning("Model file not found. Using a dummy linear regression model for demo.")
