@@ -59,6 +59,12 @@ if st.sidebar.button("Predict Sales"):
     input_features[1] = selected_date.year
     input_features[2] = selected_date.month
     input_features[3] = selected_date.day
+
+    # Add more date-related features if needed
+    # For example, you might want to include day of week, is_weekend, etc.
+    input_features[6] = 1 if selected_date.weekday() >= 5 else 0  # is_weekend (1 if weekend, 0 otherwise)
+    
+    
     input_features = np.array([input_features])  # Use the full feature array
 
     # Make prediction
